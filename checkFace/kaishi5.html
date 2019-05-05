@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>人脸识别</title>
+    <script src="rem.js"></script><link rel="stylesheet" href="css/common.css">
+
+    <style>
+    .touxiang{
+        width: 4.08rem;
+        height: 4.08rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: 1.6rem;
+    }
+    .touxiang img{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        text-align:center;
+        position:relative;
+    }
+    #p1{
+        margin-top: 5.5rem;
+        font-size:0.28rem;
+        color:#2fbc7f;
+        font-weight: 550;
+    }
+    #p2{
+        font-size:0.22rem;
+        color:#929292;
+        line-height: 0.5rem;
+    }
+    .input{
+        width: 70%;
+        margin: 0 auto;
+        height: 0.5rem;
+        margin-top: 2rem;
+        border-bottom: 0.01rem solid #c4c4c4;
+        position: relative;
+    }
+    .leftImg{
+        width: 0.5rem;
+        height: 100%;
+        float: left;
+    }
+    .leftImg div{
+        width:0.3rem;
+        height:0.2rem;
+        border-radius:0.1rem;
+        background-color:#ffcb2e;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        box-shadow:0px 3px 0.1rem 0.05px #f4e8c4;
+    }
+    .content{
+        float: left;
+        width: 70%;
+        height: 100%;
+    }
+    input{
+        float: left;
+        background: none;outline:none;border: 0;
+        line-height: 0.5rem;
+    }
+    .del{
+        float: right;
+        font-size:0.28rem;
+        color: #929292;
+    }
+    #button{
+        background-color: #41c0ff;
+        color:#ffffff;
+        bottom: 3rem;
+        box-shadow:0px 4px 11px 1px #95dcff;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="touxiang">
+                <div class="circle" id="circleL"></div>
+                <div class="circle" id="circleM"></div>
+                <div class="circle" id="circleS">
+                    <div class="tou1"></div>
+                    <div class="tou2"></div>
+                </div>
+        </div>
+        <div class="text" id="p1"><p>请通过人脸识别验证您的身份</p></div>
+        <div class="text" id="p2"><p>请按照以下步骤完成脸部验证</p></div>
+        <div class="input">
+            <div class="leftImg">
+                <div></div>
+            </div>
+            <div class="content">
+                <input type="text" placeholder="请输入你的名字">
+            </div>
+            <div class="del">x</div>
+        </div>
+        <div class="button" id="button">
+            开始识别
+        </div>
+    </div>
+</body>
+</html>

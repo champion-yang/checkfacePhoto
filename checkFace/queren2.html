@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>人脸识别</title>
+    <script src="rem.js"></script><link rel="stylesheet" href="css/common.css">
+    <style>
+    .tankuang{
+        width: 5.5rem;
+        height: 3.5rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: url("img/tanchaung.png")no-repeat;
+        background-size: 100%;
+        padding-top: 0.5rem;
+        padding-left:1rem;
+        padding-right:1rem;
+        box-sizing: border-box;
+    }
+    .wenhao{
+        width: 1rem;
+        height: 1rem;
+        margin: 0 auto;
+    }
+    .wenhao img{
+        width: 0.8rem;
+    }
+    .text{
+        margin-top: 0.2rem;
+        width: 100%;
+        text-align:center;
+        line-height:0.3rem;
+        font-size:0.22rem;
+    }
+    #button{
+        width: 100%;
+        height: 1rem;
+
+    }
+    .confirm{
+        width: 1.7rem;
+        height: 1rem;
+        float: left;
+    }
+    .confirm img{
+        width: 100%;
+    }
+    .cancle{
+        width: 1.7rem;
+        height: 1rem;
+        float: right;
+    }
+    .cancle img{
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="tankuang">
+            <div class="wenhao">
+                <img src="img/wenhao.png" alt="">
+            </div>
+            <div class="text">您确定进行人脸识别吗？</div>
+            <div id="button">
+                <div class="confirm"><img src="img/confirm1.png" alt=""></div>
+                <div class="cancle"><img src="img/cancle.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
